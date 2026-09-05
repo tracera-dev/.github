@@ -1,0 +1,24 @@
+<!-- Shared Tracera infinity mark (viewBox 0 0 1024 1024). True ∞ — crosses at center. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="none">
+  <defs>
+    <linearGradient id="traceraMobius" x1="120" y1="512" x2="904" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="50%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#FF2BD6"/>
+    </linearGradient>
+  </defs>
+  <!--
+    Tab-weight stroke (~2.2px at 16×16). Path crosses (512,512) twice → real ∞.
+  -->
+  <path
+    stroke="url(#traceraMobius)"
+    stroke-width="128"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    d="M 168 512
+       C 168 288 388 288 512 512
+       C 636 736 856 736 856 512
+       C 856 288 636 288 512 512
+       C 388 736 168 736 168 512"
+  />
+</svg>
